@@ -68,7 +68,7 @@ module MyConfig implements DataFlow::ConfigSig {
 
 }
 
-module MyTaint = TaintTracking::Global<MyConfig>
+module MyTaint = TaintTracking::Global<MyConfig>;
 import MyTaint::PathGraph
 
 from MyTaint::PathNode source, MyTaint::PathNode sink
