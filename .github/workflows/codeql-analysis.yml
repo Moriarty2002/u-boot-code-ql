@@ -32,10 +32,7 @@ jobs:
       run: |
         # Install dependencies
         sudo apt-get update
-        sudo apt-get install -y build-essential bc bison flex libssl-dev make
-       sudo apt-get install -y \
-      build-essential bc bison flex libssl-dev make \
-      libsdl2-dev 
+        sudo apt-get install -y build-essential bc bison flex libssl-dev make libsdl2-dev 
         
         # Configure U-Boot
         make sandbox_defconfig
